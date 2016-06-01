@@ -1,0 +1,19 @@
+node_types:
+
+  picard-CleanSAM:
+    derived_from: workflow_service
+    properties:
+      Validation-Stringency:
+        type: string
+        default: LENIENT
+      Comments:
+        type: string
+      #input
+      input-SAM_BAM-files:
+        type: string
+        default: file-wrapper
+      #output
+      cleaned-SAM_BAM-files:
+        type: string
+        default: file-wrapper
+
